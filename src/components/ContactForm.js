@@ -18,7 +18,7 @@ function Contactform() {
         </p>
         <p>
           <label>
-            <textarea name="message" placeholder="Message" required />
+            <textarea name="message" cols="30" rows="10" placeholder="Message" required />
           </label>
         </p>
         <p>
