@@ -56,7 +56,7 @@ function Footer() {
           <div className="footer-logo">
             <Link to="/" className="social-logo">
               <i className="fas fa-dog" />
-              Dialguiba's
+              Dialguiba
             </Link>
           </div>
           <small className="website-rights">© 2020</small>
