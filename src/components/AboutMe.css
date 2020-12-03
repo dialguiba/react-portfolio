@@ -1,0 +1,38 @@
+#description-container {
+  padding: 4rem;
+  background: #fff;
+}
+
+#description-list {
+  list-style-type: none;
+}
+
+#description-list > li > ul {
+  list-style-type: none;
+}
+
+#description-list > li:nth-child(n) {
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.8rem;
+}
+#description-list > li:nth-child(n) p {
+  display: inline-block;
+  text-align: justify;
+}
+
+#description-list > li:nth-child(6) ul {
+  display: flex;
+}
+@media (min-width: 700px) {
+  #description-list {
+    padding: 0 5rem 0 5rem;
+  }
+}
+
+.icons {
+  width: 3rem;
+  height: auto;
+  min-width: 3rem;
+  padding-right: 1.2rem;
+}
