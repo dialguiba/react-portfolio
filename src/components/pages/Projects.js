@@ -7,7 +7,10 @@ function Projects() {
   return (
     <>
       {/* <video src={CodingVideo} autoPlay loop muted /> */}
-      <h1 className="principal-title projects-page">PROJECTS</h1>
+      <div className="principal-title-container projects-page">
+        <h1 className="principal-title">PROJECTS</h1>
+      </div>
+
       <div className="cards">
         <div className="cards__container">
           <div className="cards__wrapper">

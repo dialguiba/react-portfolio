@@ -5,7 +5,10 @@ import ContactForm from "../ContactForm";
 export default function Products() {
   return (
     <>
-      <h1 className="products">CONTACT ME</h1>
+      <div className="principal-title-container contact-page">
+        <h1 className="principal-title">CONTACT ME</h1>
+      </div>
+
       <ContactForm />
     </>
   );
