@@ -4,7 +4,7 @@ import "./ContactForm.css";
 function Contactform() {
   return (
     <div id="contact-form-container">
-      <form name="contact" action="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="contact" value="contact" />
         <input type="text" name="name" id="" placeholder="Your name" required />
         <input type="email" name="email" id="" placeholder="Your Email" required />
