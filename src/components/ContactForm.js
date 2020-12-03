@@ -4,14 +4,28 @@ import "./ContactForm.css";
 function Contactform() {
   return (
     <div id="contact-form-container">
-      <form name="contact" method="POST" data-netlify="true">
-        <input type="hidden" name="contact" value="contact" />
-        <input type="text" name="name" id="" placeholder="Your name" required />
-        <input type="email" name="email" id="" placeholder="Your Email" required />
-        <textarea name="message" cols="30" rows="10" placeholder="Message" required></textarea>
-        {/* <div style={{ margin: "auto" }} data-netlify-recaptcha="true" required></div> */}
-        <button type="submit">SEND</button>
+      <form method="post" name="contact">
+        <input type="hidden" name="form-name" value="contact" />
+        <p>
+          <label>
+            Your Name: <input type="text" name="name" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Your Email: <input type="email" name="email" />
+          </label>
+        </p>
+        <p>
+          <label>
+            Message: <textarea name="message" />
+          </label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
       </form>
+      ,
     </div>
   );
 }
