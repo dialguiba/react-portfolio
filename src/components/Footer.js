@@ -55,27 +55,33 @@ function Footer() {
         <div className="social-media-wrap">
           <div className="footer-logo">
             <Link to="/" className="social-logo">
+              <i className="fas fa-dog" />
               Dialguiba's
-              <i className="fab fa-typo3" />
             </Link>
           </div>
           <small className="website-rights">© 2020</small>
           <div className="social-icons">
-            <Link className="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">
+            {/* <a className="social-icon-link facebook" to="/" target="_blank" aria-label="Facebook">
               <i className="fab fa-facebook-f" />
-            </Link>
-            <Link className="social-icon-link instagram" to="/" target="_blank" aria-label="Instagram">
+            </a> */}
+            <a className="social-icon-link instagram" href="https://www.instagram.com/baad14/" rel="noreferrer" target="_blank" aria-label="Instagram">
               <i className="fab fa-instagram" />
-            </Link>
-            <Link className="social-icon-link youtube" to="/" target="_blank" aria-label="Youtube">
+            </a>
+            <a
+              className="social-icon-link youtube"
+              href="https://www.youtube.com/channel/UCinmMZjbdCn5KvNeNDqfZHw?view_as=subscriber"
+              target="_blank"
+              rel="noreferrer"
+              aria-label="Youtube"
+            >
               <i className="fab fa-youtube" />
-            </Link>
-            <Link className="social-icon-link twitter" to="/" target="_blank" aria-label="Twitter">
+            </a>
+            <a className="social-icon-link twitter" href="https://twitter.com/Baad17" rel="noreferrer" target="_blank" aria-label="Twitter">
               <i className="fab fa-twitter" />
-            </Link>
-            <Link className="social-icon-link twitter" to="/" target="_blank" aria-label="LinkedIn">
+            </a>
+            <a className="social-icon-link twitter" href="https://www.linkedin.com/in/diego-aguirre-7738771a3/" rel="noreferrer" target="_blank" aria-label="LinkedIn">
               <i className="fab fa-linkedin" />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

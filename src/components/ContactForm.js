@@ -8,12 +8,12 @@ function Contactform() {
         <input type="hidden" name="form-name" value="contact" />
         <p>
           <label>
-            <input type="text" name="name" placeholder="Your name" required />
+            <input type="text" name="name" placeholder="Your name" style={{ width: "100%" }} required />
           </label>
         </p>
         <p>
           <label>
-            <input type="email" name="email" placeholder="Your Email" required />
+            <input type="email" name="email" placeholder="Your Email" style={{ width: "100%" }} required />
           </label>
         </p>
         <p>
@@ -22,7 +22,9 @@ function Contactform() {
           </label>
         </p>
         <p>
-          <button type="submit">Send</button>
+          <button type="submit" style={{ width: "100%" }}>
+            Send
+          </button>
         </p>
       </form>
       ,
