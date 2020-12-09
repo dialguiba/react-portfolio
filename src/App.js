@@ -5,7 +5,8 @@ import Home from "./components/pages/Home";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Projects from "./components/pages/Projects";
 import Contact from "./components/pages/Contact";
-import SignUp from "./components/pages/SignUp";
+/* import SignUp from "./components/pages/SignUp"; */
+import Articles from "./components/pages/Articles";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
           <Route path="/" exact component={Home} />
           <Route path="/projects" component={Projects} />
           <Route path="/contact" component={Contact} />
-          <Route path="/sign-up" component={SignUp} />
+          {/* <Route path="/sign-up" component={SignUp} /> */}
+          <Route path="/articles" component={Articles} />
         </Switch>
       </Router>
     </>

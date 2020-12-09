@@ -68,6 +68,15 @@ html {
 
   /* font-size: 100px; */
 }
+
+.articles-page {
+  background-image: url("./images/articles.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* font-size: 100px; */
+}
 @media screen and (max-width: 960px) {
   .principal-title-container {
     height: 90vh;
