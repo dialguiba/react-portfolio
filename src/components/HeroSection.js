@@ -8,6 +8,8 @@ import twitter from "../images/twitter-icon.svg";
 import github from "../images/github-icon.svg";
 import devto from "../images/devto-icon.svg";
 import discord from "../images/discord-icon.svg";
+import codesandbox from "../images/codesandbox-icon.svg";
+import linkedin from "../images/linkedin-icon.svg";
 
 function HeroSection() {
   return (
@@ -19,23 +21,57 @@ function HeroSection() {
 
       <ul className="social-networks">
         <li>
-          <a href="https://twitter.com/Baad17" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://twitter.com/Baad17"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img className="icons-social" src={twitter} alt="" />
           </a>
         </li>
         <li>
-          <a href="https://github.com/dialguiba" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://github.com/dialguiba"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img className="icons-social" src={github} alt="" />
           </a>
         </li>
         <li>
-          <a href="https://dev.to/dialguiba" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://dev.to/dialguiba"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img className="icons-social" src={devto} alt="" />
           </a>
         </li>
         <li>
-          <a href="https://discord.com/channels/@me/baad1994#1926/" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://discord.com/channels/@me/baad1994#1926/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img className="icons-social" src={discord} alt="" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/diego-aguirre-7738771a3/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="icons-social" src={linkedin} alt="" />
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://codesandbox.io/search?query=dialguiba&page=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img className="icons-social" src={codesandbox} alt="" />
           </a>
         </li>
       </ul>
