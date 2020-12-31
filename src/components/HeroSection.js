@@ -4,10 +4,10 @@ import "../App.css";
 import "./HeroSection.css";
 import video from "../videos/video-1.mp4";
 import avatar from "../images/avatar.svg";
-import twitter from "../images/twitter-icon.svg";
+/* import twitter from "../images/twitter-icon.svg";*/
 import github from "../images/github-icon.svg";
 import devto from "../images/devto-icon.svg";
-import discord from "../images/discord-icon.svg";
+/* import discord from "../images/discord-icon.svg"; */
 import codesandbox from "../images/codesandbox-icon.svg";
 import linkedin from "../images/linkedin-icon.svg";
 
