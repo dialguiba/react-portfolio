@@ -1,6 +1,7 @@
 import React from "react";
 import Cards from "../CardsArticles";
 import Portrait from "./Portrait";
+import "./CardsContainer.css";
 
 function Articles() {
   return (

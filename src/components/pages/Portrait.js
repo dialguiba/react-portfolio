@@ -1,4 +1,5 @@
 import React from "react";
+import "./Portrait.css";
 
 function Portrait(props) {
   return (

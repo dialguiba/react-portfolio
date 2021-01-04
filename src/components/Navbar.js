@@ -27,44 +27,37 @@ function Navbar() {
   return (
     <>
       <nav className="navbar">
-        <div className="navbar-container">
-          <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-            <i className="fas fa-laptop-code" />
-            Dialguiba
-          </Link>
-          <div className="menu-icon" onClick={handleClick}>
-            <i className={click ? "fas fa-times" : "fas fa-bars"} />
-          </div>
-          <ul className={click ? "nav-menu active" : "nav-menu"}>
-            <li className="nav-item">
-              <Link to="/" className="nav-links" onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/projects" className="nav-links" onClick={closeMobileMenu}>
-                Projects
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/articles" className="nav-links" onClick={closeMobileMenu}>
-                Articles
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/contact" className="nav-links" onClick={closeMobileMenu}>
-                Contact
-              </Link>
-            </li>
-
-            {/* <li>
-              <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>
-                Sign Up
-              </Link>
-            </li> */}
-          </ul>
-          {/* {button && <Button buttonStyle="btn--outline">SIGN UP</Button>} */}
+        {/* <div className="navbar-container"> */}
+        <Link to="/" className="navbar__logo" onClick={closeMobileMenu}>
+          <i className="fas fa-laptop-code navbar__logo__icon" />
+          Dialguiba
+        </Link>
+        <div className="navbar__menu-icon" onClick={handleClick}>
+          <i className={click ? "fas fa-times" : "fas fa-bars"} />
         </div>
+        <ul className={click ? "navbar__nav-menu navbar__active" : "navbar__nav-menu"}>
+          <li className="navbar__item">
+            <Link to="/" className="navbar__link" onClick={closeMobileMenu}>
+              Home
+            </Link>
+          </li>
+          <li className="navbar__item">
+            <Link to="/projects" className="navbar__link" onClick={closeMobileMenu}>
+              Projects
+            </Link>
+          </li>
+          <li className="navbar__item">
+            <Link to="/articles" className="navbar__link" onClick={closeMobileMenu}>
+              Articles
+            </Link>
+          </li>
+          <li className="navbar__item">
+            <Link to="/contact" className="navbar__link" onClick={closeMobileMenu}>
+              Contact
+            </Link>
+          </li>
+        </ul>
+        {/*   </div> */}
       </nav>
     </>
   );

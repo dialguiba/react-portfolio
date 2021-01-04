@@ -1,0 +1,56 @@
+.principal-title {
+  background-color: rgba(52, 58, 64, 0.83);
+  width: 100%;
+}
+
+.principal-title-container {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #fff;
+}
+
+.projects-page {
+  background-image: url("../../images/coding.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* font-size: 100px; */
+}
+
+.articles-page {
+  background-image: url("../../images/articles.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* font-size: 100px; */
+}
+
+@media screen and (max-width: 960px) {
+  .principal-title-container {
+    height: 90vh;
+  }
+
+  .principal-title {
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .principal-title-container {
+    height: 90vh;
+  }
+
+  .principal-title {
+    font-size: 4rem;
+  }
+}
+.contact-page {
+  background-image: url("../../images/img-1.jpg");
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  /* font-size: 100px; */
+}

@@ -1,0 +1,161 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* INICIO SCROLL BAR */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(11, 206, 178);
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(11, 206, 178);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(11, 206, 178);
+}
+
+
+.home,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.principal-title {
+  
+  
+  background-color: rgba(52, 58, 64, 0.83);
+ 
+  width:100%;
+}
+
+.principal-title-container {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  color: #fff;
+  
+}
+
+.projects-page {
+  background-image: url("./images/coding.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* font-size: 100px; */
+}
+
+.articles-page {
+  background-image: url("./images/articles.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* font-size: 100px; */
+}
+@media screen and (max-width: 960px) {
+  .principal-title-container {
+    height: 90vh;
+
+    
+  }
+  .principal-title{
+    font-size: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .principal-title-container {
+    height: 90vh;
+
+    
+  }
+  .principal-title{
+    font-size: 4rem;
+  }
+}
+
+.contact-page {
+  background-image: url("./images/img-1.jpg");
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  /* font-size: 100px; */
+}
+
+.sign-up {
+  background-image: url("./images/img-8.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+/* CARDS DE PROJECTS */
+
+.cards {
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.cards__container {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__wrapper {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  margin: 50px 0 45px;
+}
+
+@media screen and (max-width: 960px) {
+  .cards__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    margin: 50px 0 45px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .cards__wrapper {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr;
+
+    margin: 50px 0 45px;
+  }
+}

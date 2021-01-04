@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Knowledges.css";
-
+import useScrollPosition from "@react-hook/window-scroll";
+import { TweenMax } from "gsap";
 import HtmlIcon from "../images/knowledges/html-icon.svg";
 import CssIcon from "../images/knowledges/css-icon.svg";
 import JsIcon from "../images/knowledges/js-icon.svg";
@@ -26,77 +27,103 @@ import NodejsIcon from "../images/knowledges/nodejs-icon.svg";
 import MatlabIcon from "../images/knowledges/matlab-icon.svg";
 
 function Knowledges() {
+  const sectionKnowledgesRef = useRef(null);
+
+  const scrollY = useScrollPosition(60);
+
+  const fadeIn = (element) => {
+    TweenMax.to(element, 1, {
+      opacity: 1,
+      scale: 1,
+      ease: "power4.out",
+      stagger: {
+        amount: 0.3,
+      },
+    });
+  };
+  const fadeOut = (element) => {
+    TweenMax.to(element, 1, {
+      opacity: 0,
+      scale: 0,
+      ease: "power4.out",
+    });
+  };
+
+  sectionKnowledgesRef.current && sectionKnowledgesRef.current.clientHeight - scrollY < 50 ? fadeIn(".fadeInProjects") : fadeOut(".fadeInProjects");
+
   return (
-    <div id="knowledges-section">
-      <h1 id="title">KNOWLEDGES</h1>
+    <div id="knowledges-section" ref={sectionKnowledgesRef}>
+      <h1 id="title" className="fadeInProjects">
+        KNOWLEDGES
+      </h1>
       <div id="knowledges-grid-container">
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={HtmlIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={CssIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={JsIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={JqueryIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={AjaxIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={BootstrapIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={EjsIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={HbsIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={ReactIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={PhpIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={JavaIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={CIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={CPlusPlusIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={CSharpIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={PyIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={YamlIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={SqlIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={BashIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={VhdlIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={ArduinoIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={DockerIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={NodejsIcon} alt="" />
         </div>
-        <div className="knowledge-grid-item">
+        <div className="knowledge-grid-item fadeInProjects">
           <img className="icons-knowledges" src={MatlabIcon} alt="" />
         </div>
       </div>

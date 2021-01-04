@@ -1,5 +1,5 @@
 import React from "react";
-import "../../App.css";
+import "./CardsContainer.css";
 import Cards from "../CardsProjects";
 /* import CodingVideo from "../../videos/coding-video.mp4"; */
 import Portrait from "./Portrait";

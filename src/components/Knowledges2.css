@@ -1,0 +1,42 @@
+#knowledges-section {
+  background-color: #fff;
+  max-width: 100%;
+}
+
+#title {
+  margin-bottom: 3.5rem;
+
+  text-shadow: 0px 1px 0 rgb(112, 228, 232), 0px -1px 0 rgb(112, 228, 232), 1px 0px 0 rgb(112, 228, 232), -1px 0px 0 rgb(112, 228, 232), 1px 1px 0 rgb(112, 228, 232),
+    1px -1px 0 rgb(112, 228, 232), -1px 1px 0 rgb(112, 228, 232), -1px -1px 0 rgb(112, 228, 232), 0px 2px 0 rgb(112, 228, 232), 0px -2px 0 rgb(112, 228, 232),
+    2px 0px 0 rgb(112, 228, 232), -2px 0px 0 rgb(112, 228, 232), 2px 2px 0 rgb(112, 228, 232), 2px -2px 0 rgb(112, 228, 232), -2px 2px 0 rgb(112, 228, 232),
+    -2px -2px 0 rgb(112, 228, 232), 0px 3px 0 rgb(112, 228, 232), 0px -3px 0 rgb(112, 228, 232), 3px 0px 0 rgb(112, 228, 232), -3px 0px 0 rgb(112, 228, 232),
+    3px 3px 0 rgb(112, 228, 232), 3px -3px 0 rgb(112, 228, 232), -3px 3px 0 rgb(112, 228, 232), -3px -3px 0 rgb(112, 228, 232), 4px 4px 1px rgba(0, 0, 0, 0.48);
+  -webkit-text-shadow: 0px 1px 0 rgb(112, 228, 232), 0px -1px 0 rgb(112, 228, 232), 1px 0px 0 rgb(112, 228, 232), -1px 0px 0 rgb(112, 228, 232),
+    1px 1px 0 rgb(112, 228, 232), 1px -1px 0 rgb(112, 228, 232), -1px 1px 0 rgb(112, 228, 232), -1px -1px 0 rgb(112, 228, 232), 0px 2px 0 rgb(112, 228, 232),
+    0px -2px 0 rgb(112, 228, 232), 2px 0px 0 rgb(112, 228, 232), -2px 0px 0 rgb(112, 228, 232), 2px 2px 0 rgb(112, 228, 232), 2px -2px 0 rgb(112, 228, 232),
+    -2px 2px 0 rgb(112, 228, 232), -2px -2px 0 rgb(112, 228, 232), 0px 3px 0 rgb(112, 228, 232), 0px -3px 0 rgb(112, 228, 232), 3px 0px 0 rgb(112, 228, 232),
+    -3px 0px 0 rgb(112, 228, 232), 3px 3px 0 rgb(112, 228, 232), 3px -3px 0 rgb(112, 228, 232), -3px 3px 0 rgb(112, 228, 232), -3px -3px 0 rgb(112, 228, 232),
+    4px 4px 1px rgba(0, 0, 0, 0.48);
+  -moz-text-shadow: 0px 1px 0 rgb(112, 228, 232), 0px -1px 0 rgb(112, 228, 232), 1px 0px 0 rgb(112, 228, 232), -1px 0px 0 rgb(112, 228, 232), 1px 1px 0 rgb(112, 228, 232),
+    1px -1px 0 rgb(112, 228, 232), -1px 1px 0 rgb(112, 228, 232), -1px -1px 0 rgb(112, 228, 232), 0px 2px 0 rgb(112, 228, 232), 0px -2px 0 rgb(112, 228, 232),
+    2px 0px 0 rgb(112, 228, 232), -2px 0px 0 rgb(112, 228, 232), 2px 2px 0 rgb(112, 228, 232), 2px -2px 0 rgb(112, 228, 232), -2px 2px 0 rgb(112, 228, 232),
+    -2px -2px 0 rgb(112, 228, 232), 0px 3px 0 rgb(112, 228, 232), 0px -3px 0 rgb(112, 228, 232), 3px 0px 0 rgb(112, 228, 232), -3px 0px 0 rgb(112, 228, 232),
+    3px 3px 0 rgb(112, 228, 232), 3px -3px 0 rgb(112, 228, 232), -3px 3px 0 rgb(112, 228, 232), -3px -3px 0 rgb(112, 228, 232), 4px 4px 1px rgba(0, 0, 0, 0.48);
+  font-size: 3rem;
+  color: rgb(255, 255, 255);
+  font-family: "Comic Sans MS", cursive;
+}
+
+#knowledges-grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+  padding-bottom: 3rem;
+}
+
+.icons-knowledges {
+  /* height: 1.5rem; */
+  max-width: 100%;
+  max-height: 7rem;
+  /* margin: 1.5rem 2rem 0 2rem; */
+}
