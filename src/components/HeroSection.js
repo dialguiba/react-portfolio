@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { TimelineLite, TweenMax, Power3 } from "gsap";
+import { TimelineLite, TweenMax } from "gsap";
 /* import "../App.css"; */
 /* import { Button } from "./Button"; */
 import "./HeroSection.css";
