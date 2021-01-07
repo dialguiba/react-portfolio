@@ -1,3 +1,10 @@
+.portrait__arrow {
+  scale: 0.5;
+  position: absolute;
+  bottom: 0;
+  cursor: pointer;
+}
+
 .principal-title {
   background-color: rgba(52, 58, 64, 0.83);
   width: 100%;

@@ -1,16 +1,14 @@
-import React from "react";
+import React, { useRef } from "react";
 import Cards from "../CardsArticles";
 import Portrait from "./Portrait";
 import "./CardsContainer.css";
 
 function Articles() {
+  const articlesRef = useRef(null);
   return (
     <>
-      {/* <div className="principal-title-container projects-page">
-        <h1 className="principal-title">ARTICLES</h1>
-      </div> */}
-      <Portrait name="ARTICLES" class="articles" />
-      <div className="cards">
+      <Portrait name="ARTICLES" class="articles" reference={articlesRef} />
+      <div className="cards" ref={articlesRef}>
         <div className="cards__container">
           <div className="cards__wrapper">
             <Cards />
