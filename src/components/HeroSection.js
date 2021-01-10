@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import { TimelineLite, TweenMax } from "gsap";
+import { TweenMax } from "gsap";
 /* import "../App.css"; */
 /* import { Button } from "./Button"; */
 import "./HeroSection.css";
@@ -23,7 +23,7 @@ function HeroSection() {
   let avatarElement = useRef(null);
   let titleElement = useRef(null);
   let socialNetElement = useRef(null);
-  let tl = new TimelineLite({ delay: 0.5 });
+  /* let tl = new TimelineLite({ delay: 0.5 }); */
 
   useEffect(() => {
     let firstSocialIcon = socialNetElement.children[0].firstElementChild.firstElementChild;
@@ -37,14 +37,19 @@ function HeroSection() {
       { y: 2, rotate: 2, transformOrigin: "center center", ease: "sine.inOut" },
       { y: -2, rotate: -2, repeat: -1, yoyo: true, ease: "sine.inOut" }
     );
+    TweenMax.fromTo(avatarElement, 3, { scale: 0, visibility: "visible", ease: "sine.inOut" }, { scale: 1, visibility: "visible", ease: "sine.inOut" });
+    TweenMax.fromTo(titleElement, 3, { scale: 0, visibility: "visible", ease: "sine.inOut" }, { scale: 1, visibility: "visible", ease: "sine.inOut" });
+    TweenMax.fromTo(socialNetElement, 3, { scale: 0, visibility: "visible", ease: "sine.inOut" }, { scale: 1, visibility: "visible", ease: "sine.inOut" });
+
     TweenMax.fromTo(titleElement, 1, { y: 5, ease: "sine.inOut" }, { y: -5, repeat: -1, yoyo: true, ease: "sine.inOut" });
     TweenMax.fromTo(firstSocialIcon, 1, { y: 5, ease: "sine.inOut" }, { y: -5, repeat: -1, yoyo: true, ease: "sine.inOut" });
     TweenMax.fromTo(secondSocialIcon, 1, { y: 5, ease: "sine.inOut" }, { y: -5, repeat: -1, yoyo: true, ease: "sine.inOut" });
     TweenMax.fromTo(thirdSocialIcon, 1, { y: 5, ease: "sine.inOut" }, { y: -5, repeat: -1, yoyo: true, ease: "sine.inOut" });
     TweenMax.fromTo(fourthSocialIcon, 1, { y: 5, ease: "sine.inOut" }, { y: -5, repeat: -1, yoyo: true, ease: "sine.inOut" });
-    tl.from(avatarElement, 3, { scale: 0, ease: "sine.inOut" }, "Start")
+
+    /* tl.from(avatarElement, 3, { scale: 0, ease: "sine.inOut" }, "Start")
       .from(titleElement, 3, { scale: 0, ease: "sine.inOut" }, "Start")
-      .from(socialNetElement, 3, { scale: 0, ease: "sine.inOut" }, "Start");
+      .from(socialNetElement, 3, { scale: 0, ease: "sine.inOut" }, "Start"); */
   });
 
   return (

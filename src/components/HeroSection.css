@@ -92,13 +92,16 @@ video {
 .hero-container__content__avatar {
   display: block;
   margin-bottom: 30px;
+  visibility: hidden;
 }
 .hero-container__content__title {
   color: #fff;
   font-size: 50px;
+  visibility: hidden;
 }
 .hero-container__content__social-network {
   /* display: block; */
+  visibility: hidden;
   width: 50%;
   /* margin: auto; */
   margin-top: 1.5rem;
