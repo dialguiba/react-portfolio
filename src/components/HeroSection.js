@@ -3,7 +3,7 @@ import { TimelineLite, TweenMax } from "gsap";
 /* import "../App.css"; */
 /* import { Button } from "./Button"; */
 import "./HeroSection.css";
-import video from "../videos/video-1.mp4";
+/* import video from "../videos/video-1.mp4"; */
 import avatar from "../images/avatar.svg";
 /* import twitter from "../images/twitter-icon.svg";*/
 import github from "../images/github-icon.svg";
@@ -11,8 +11,15 @@ import devto from "../images/devto-icon.svg";
 /* import discord from "../images/discord-icon.svg"; */
 import codesandbox from "../images/codesandbox-icon.svg";
 import linkedin from "../images/linkedin-icon.svg";
+import { useSpring, animated } from "react-spring";
+
+const calc = (x, y) => [x - window.innerWidth / 2, y - window.innerHeight / 2];
+const trans1 = (x, y) => `translate3d(${x / 10}px,${y / 10}px,0)`;
+/* const trans2 = (x, y) => `translate3d(${x / 8 + 35}px,${y / 8 - 230}px,0)`; */
 
 function HeroSection() {
+  const [props, set] = useSpring(() => ({ xy: [0, 0], config: { mass: 10, tension: 550, friction: 140 } }));
+
   let avatarElement = useRef(null);
   let titleElement = useRef(null);
   let socialNetElement = useRef(null);
@@ -42,7 +49,12 @@ function HeroSection() {
 
   return (
     <div className="hero-container">
-      <video src={video} autoPlay loop muted />
+      {/* <video src={video} autoPlay loop muted /> */}
+      <div className="container" onMouseMove={({ clientX: x, clientY: y }) => set({ xy: calc(x, y) })}>
+        <animated.div className="card1" style={{ transform: props.xy.interpolate(trans1) }} />
+        {/* <animated.div class="card2" style={{ transform: props.xy.interpolate(trans2) }} /> */}
+      </div>
+
       <div className="hero-container__content">
         <img className="hero-container__content__avatar" src={avatar} alt="" ref={(el) => (avatarElement = el)} />
         <h1 className="hero-container__content__title" ref={(el) => (titleElement = el)}>
